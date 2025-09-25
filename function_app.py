@@ -130,7 +130,7 @@ def MDOAlertsSentinelConnector(myTimer: func.TimerRequest) -> None:
 
     token = get_microsoft_token(sp_tenant_id, sp_client_id, sp_client_secret)
 
-    office = Office(sp_tenant_id, token)
+    office = Office(sp_tenant_id, OFFICE_CONTENT_TYPE, OFFICE_PUBLISHER_ID, token)
 
     alerts = []
 
