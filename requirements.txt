@@ -1,0 +1,9 @@
+azure-functions
+azure-identity
+azure-keyvault-secrets
+azure-monitor-ingestion
+azure-storage-blob
+google-api-python-client
+python-dateutil
+requests
+cryptography==43.0.3
