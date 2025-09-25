@@ -136,7 +136,7 @@ def MDOAlertsSentinelConnector(myTimer: func.TimerRequest) -> None:
 
     for blobs in office.list_blobs(start_time, end_time):
         for blob in blobs:
-            content_url = blobs["contentUri"]
+            content_url = blob["contentUri"]
             content = office.get_content(content_url)
 
             for event in content:
